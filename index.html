@@ -6,8 +6,8 @@ body {
   font-family: Courier, monospace;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f9;
-  color: #333;
+  background-color: #adc8de;
+  color: #5c0a11;
 }
 
 /* Header styles */
@@ -15,7 +15,7 @@ header {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: #4a4e69;
+  background-color: #bf545d;
   color: white;
 }
 
@@ -40,6 +40,10 @@ header {
   color: white;
   font-weight: bold;
 }
+  
+  a:hover {
+    color: #a10e1a;
+  }
   
 /* Games Page styles */
 .games {
@@ -94,14 +98,43 @@ header {
   width: 75%;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
+/* Top banner */
+.container {
+  position: relative;
+  text-align: center;
+  border: 10px solid #001e30;
+  color: white;
 }
+  
+.container img {
+  opacity: 0.8;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+  
+.bg-text {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  height: 20%;
+  width: 80%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+  
+.bg-text h1 {
+  font-family: Lucida Console, monospace;
+  background-color: rgba(0,0,0, 0.6);
+  border: 5px solid #15dde6;
+  padding: 20px;
+  }
   </style>
+  
 <!-- Content -->
 <head>
   <meta charset="UTF-8">
@@ -110,11 +143,13 @@ header {
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  
   <!-- Logo that links back to the homepage -->
   <header>
     <a href="https://dreamingofyuu.github.io/fan_yukie_a3/">
       <img src="logo.png" alt="Gamiverse Logo" class="logo">
     </a>
+    
     <!-- Navigation bar -->
     <nav>
       <ul class="nav-bar">
@@ -124,10 +159,18 @@ header {
       </ul>
     </nav>
   </header>
+  
+   <!-- Top banner -->
+    <div class="container">
+    <img src="thumb-1920-1090797.jpg" alt="Riot Games Banner" style="width:100%;">
+    <div class="bg-text"><h1>
+      Riot Games</h1></div>
+  </div>
+  
   <!-- Games Section -->
   <main class="games">
-    <h1>Riot Games</h1>
-  
+    
+  <!-- Valorant -->
     <section id="Valorant" class="games">
       <h2>Valorant</h2>
       <img src="1706273134valorant-icon-png.png" alt="Valorant" class="center">
@@ -139,7 +182,8 @@ header {
       <p>Rating: 8.5/10</p>
       <p>Reason: Valorant may be one of two games that I have a love-hate relationship with. Sometimes, my matches can go really well and I do amazing, other days I can go 0/10/2 (K/D/A). However, like many multiplayer games, I mainly play with my friens. They make those 10 loss streaks bareable and fun. Gameplay wise, Valorant is fun and unique with all its agents and their many abilities. With map glitches or lineups, a player has unlimited possibilities to win their match. There are many gamemodes that the game has to offer; if you get tired of normal gun shooting, you can switch to a rotating-weapons mode. Graphics wise, it's not bad, but there can be some improvements. Overall, Valorant isn't half bad when I'm winning with friends.</p>
     </section>
-      
+    
+    <!-- League of Legends -->
     <section id="League of Legends" class="games">
       <h2>League of Legends</h2>
       <img src="600px-League_of_Legends_Icon.png" alt="League of Legends" class="center">
