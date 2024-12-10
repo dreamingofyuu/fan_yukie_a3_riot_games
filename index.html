@@ -3,7 +3,7 @@
 <style>
   /* General styles for all pages */
 body {
-  font-family: Garamond, sans-serif;
+  font-family: Courier, monospace;
   margin: 0;
   padding: 0;
   background-color: #f4f4f9;
@@ -47,20 +47,30 @@ header {
 }
 
 .games h1 {
+  font-family: Lucida Console, monospace;
   text-align: center;
   margin-bottom: 30px;
 }
   
 .games h2 {
-  text-align: left;
+  font-family: Lucida Console, monospace;
+  text-align: center;
   margin-bottom: 30px;
 }
 
+/* Img settings*/
 .game img {
   width: 100px;
   height: auto;
 }
-
+  
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+  
 .game p {
   margin: 100px;
 }
@@ -120,7 +130,7 @@ header {
   
     <section id="Valorant" class="games">
       <h2>Valorant</h2>
-      <img src="1706273134valorant-icon-png.png" alt="Valorant" width="auto" height="300">
+      <img src="1706273134valorant-icon-png.png" alt="Valorant" class="center">
       <p>Platform Played on: PC</p>
       <p>Number of Months played: 8</p>
       <p>Money spent: $80</p>
@@ -132,7 +142,7 @@ header {
       
     <section id="League of Legends" class="games">
       <h2>League of Legends</h2>
-      <img src="600px-League_of_Legends_Icon.png" alt="League of Legends" width="auto" height="300">
+      <img src="600px-League_of_Legends_Icon.png" alt="League of Legends" class="center">
       <p>Platform Played on: PC/Mobile (TFT)</p>
       <p>Number of Months played: 12</p>
       <p>Money spent: $0</p>
