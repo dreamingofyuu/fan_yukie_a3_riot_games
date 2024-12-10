@@ -50,6 +50,11 @@ header {
   text-align: center;
   margin-bottom: 30px;
 }
+  
+.games h2 {
+  text-align: left;
+  margin-bottom: 30px;
+}
 
 .game img {
   width: 100px;
@@ -58,6 +63,33 @@ header {
 
 .game p {
   margin: 10px;
+}
+  
+/*Discover more*/
+  .row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 25%;
+  max-width: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: center;
+  width: 75%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
   </style>
 <!-- Content -->
@@ -109,21 +141,27 @@ header {
       <p>Rating: 7/10</p>
       <p>Reason: League is not any better than Valorant, but I have significantly more play time on it due to my laptop's inability to run Valorant. Filled with toxic players, I often find myself being annoyed at their players and have to take breaks from playing the game. That's why I try to play with my friends rather than strangers. Graphics wise, the in-game graphics are as good as they get with a MOBA game, but their splash art is really nice. Each character comes with their own splash art that ties into their own lore. Some of them are interconnected in some way while others include interesting details. The characters also have cosmetics called "Skins". These skins allow players to look cool in-game (the rift) and offer lots of unique effects. Within skinlines, there are also lores of their own, thus making it a game perfect for lore fanatics like me. The game comes with many gamemodes like Norms (normal), Ranked, Flex (Ranked with 5 players of the same party), ARAM (All Mid All Random), and TFT (Teamfight Tactics).</p>
    </section>
-  </main>
   
   <!-- Other companies -->
+    <h1>Discover Other Games</h1>
+    <div class="row">
+  <div class="column">
     <p><a href="https://www.w3schools.com">
-    <img src="Mojang-Logo-2013.png" alt="Mojang/Microsoft" width="auto" height="300">
+    <img src="mojang-logo-988A631D5C-seeklogo.com.png" alt="Mojang/Microsoft" width="auto" height="300">
     </a></p>
     <p><a href="https://www.w3schools.com">
     <img src="Electronic-Arts-Logo.svg.png" alt="EA Sports" width="auto" height="300">
     </a></p>
+  </div>
+  <div class="column">
     <p><a href="https://dreamingofyuu.github.io/fan_yukie_a3_hoyoverse_games/">
     <img src="ef6ae97143bb4b4fb023ddd6341d5823.png" alt="Hoyoverse Games" width="auto" height="300">
     </a></p>
     <p><a href="https://dreamingofyuu.github.io/fan_yukie_a3_gamespage_infold/">
     <img src="unnamed.png" alt="InFold Pte. Ltd." width="auto" height="300">
     </a></p>
-    
+    </div>
+  </div>
+    </main>
 </body>
 </html>
